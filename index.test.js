@@ -24,6 +24,13 @@ it('Returns false for roman characters with non romam diacritics', () => {
   expect(startsWithUppercase('øoo')).toBe(false)
 })
 
+it('Returns false for words not starting with letters', () => {
+  expect(startsWithUppercase(' Hello')).toBe(false)
+  expect(startsWithUppercase('1Hello')).toBe(false)
+  expect(startsWithUppercase('!Hello')).toBe(false)
+  expect(startsWithUppercase('%Hello')).toBe(false)
+})
+
 it('Returns false for non roman characters', () => {
   expect(startsWithUppercase('你好')).toBe(false)
   expect(startsWithUppercase('你好')).toBe(false)
