@@ -1,0 +1,11 @@
+{
+  "name": "starts-with-uppercase",
+  "version": "1.0.0",
+  "description": "Checks if input starts with uppercase",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Augusto Soares",
+  "license": "ISC"
+}
